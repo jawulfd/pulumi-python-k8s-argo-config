@@ -1,0 +1,8 @@
+environment:
+  - {{pulumi_environment_name}}
+config:
+  {{project_name}}:
+    k8sNamespace: {{argo_namespace}}
+    argoCDVersion: "argo-cd-7.7.7"
+    argoEventsVersion: "argo-events-2.4.9"
+    argoWorkflowsVersion: "argo-workflows-0.45.1"

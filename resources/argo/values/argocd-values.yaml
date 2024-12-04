@@ -1,0 +1,8 @@
+global:
+  domain: {{argocd_domain}}
+
+configs:
+  params:
+    "server.insecure": true
+    "server.rootpath": ''
+  addPrometheusAnnotations: true

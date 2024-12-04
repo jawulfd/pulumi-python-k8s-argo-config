@@ -1,0 +1,13 @@
+workflow:
+  serviceAccount:
+    create: true
+    name: "argo-workflow"
+  rbac:
+    create: true
+server:
+  baseHref: "/argo/"
+  secure: false
+  authModes: ["server"]
+controller:
+  workflowNamespaces:
+    - default

@@ -1,0 +1,10 @@
+name: {{project_name}}
+description: A Python program to deploy a Helm chart onto a Kubernetes cluster
+runtime:
+  name: python
+  options:
+    toolchain: poetry
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: helm-kubernetes-python

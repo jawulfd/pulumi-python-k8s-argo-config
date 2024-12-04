@@ -1,0 +1,10 @@
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: argoworkflows-stripprefix
+  namespace: argo
+spec:
+  stripPrefix:
+    prefixes:
+      - /argo
+    forceSlash: true
